@@ -1,0 +1,11 @@
+name: greeting
+on: workflow_dispatch
+jobs:
+  greeting_a_user:
+    runs-on: ubuntu-latest
+    env:
+      fn: deepthi
+      wish: hello
+    steps:
+    - name: saying hello
+      run: echo "$wish $fn....nice to meet you"
